@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <h1>Prueba 1</h1>
+    <fieldset id="data">
+      <legend>Users</legend>
+      <div>
+        <input type="button" id="0" value="0">
+        <input type="button" id="1" value="1">
+        <input type="button" id="2" value="2">
+        <input type="button" id="3" value="3">
+        <input type="button" id="4" value="4">
+        <input type="button" id="5" value="5">
+        <input type="button" id="6" value="6">
+        <input type="button" id="7" value="7">
+        <input type="button" id="8" value="8">
+        <input type="button" id="9" value="9">
+        <button type="button" id="clear">Clear</button>
+      </div>
+    </fieldset>
+    <fieldset id="info" hidden value="0">
+      <legend>Information</legend>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" disabled placeholder="name">
+        <label for="username">Username:</label>
+        <input type="text" id="username" disabled placeholder="username">
+        <label for="email">Email:</label>
+        <input type="text" id="email" disabled placeholder="example@example.com">
+        <label for="adress">City:</label>
+        <input type="text" id="city" disabled placeholder="Example">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" disabled placeholder="x-xxx-xxx-xxxx ">
+        <label for="web">Website:</label>
+        <input type="text" id="web" disabled placeholder="web@site.com">
+        <label for="company">Company:</label>
+        <input type="text" id="company" disabled placeholder="Example S.A de C.V.">
+        <br>
+        <button type="button" id="post">Post</button>
+        <button type="button" id="todos">Todos</button>
+      </div>
+    </fieldset>
+    <fieldset id="complemento"hidden>
+      <div id="box_post" hidden>
+        <label for="">Publicaciones</label>
+        <br>
+        <textarea id="publicaciones" rows="20" cols="80"></textarea>
+      </div>
+      <div id="box_todos" hidden>
+        <label for="">Tareas</label>
+        <br>
+        <textarea id="tareas" rows="20" cols="70"></textarea>
+        <form id="new" method="post">
+          <button type="submit" name="button">Agregar Todo</button>
+          <label for="title">Descripcion</label>
+          <input type="text" id="title" placeholder="Escribe una nueva tarea">
+          <label for="completed">Completada</label>
+          <input type="checkbox" id="completed">
+        </form>
+      </div>
+    </fieldset>
+  </body>
+  <script src="js/app.js"></script>
+</html>
